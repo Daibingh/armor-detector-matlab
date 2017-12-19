@@ -1,0 +1,6 @@
+clc, clear all
+list = getFileList('∫Ïµ‰–ÕÕº∆¨');
+for i=1:length(list)
+    multi_img(:,:,:,i) = imread(['∫Ïµ‰–ÕÕº∆¨/',list{i}]);
+end
+save('multi_img.mat','multi_img');
